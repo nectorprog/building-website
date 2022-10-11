@@ -1,6 +1,42 @@
 @import "private_reset";
 
+body {
+  background-color: #25252d;
+}
 
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.header-main-wrapper {
+  background-image: url("images/main/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .header {
+    border-bottom: 1px solid #363d51;
+    padding: 21px 0;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header-call{
+        display: flex;
+        flex-direction: column;
+        .header-call-text {
+
+        }
+      }
+    }
+  }
+}
 
 
 @import "adaptive";
