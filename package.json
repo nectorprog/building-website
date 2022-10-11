@@ -1,0 +1,29 @@
+{
+  "name": "building-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nectorprog/building-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nectorprog/building-website/issues"
+  },
+  "homepage": "https://github.com/nectorprog/building-website#readme",
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.6.1",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
