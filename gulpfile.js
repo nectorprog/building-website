@@ -6,7 +6,7 @@ function compileSass() {
     return src('./src/scss/styles.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCss())
-        .pipe(dest('./src/css'));
+        .pipe(dest('./src/styles'));
 }
 
 exports.default = compileSass;

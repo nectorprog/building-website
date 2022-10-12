@@ -1,7 +1,42 @@
 @import "private_reset";
 
+@font-face {
+  font-family: Neumann;
+  src: url("../../fonts/td-neumann.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("../../fonts/MuseoSansCyrl100.ttf") format("truetype"),
+  url("../../fonts/MuseoSansCyrl100.woff") format("woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("../../fonts/MuseoSansCyrl300.ttf") format("truetype"),
+  url("../../fonts/MuseoSansCyrl300.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("../../fonts/MuseoSansCyrl500.ttf") format("truetype"),
+  url("../../fonts/MuseoSansCyrl500.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("../../fonts/MuseoSansCyrl700.ttf") format("truetype"),
+  url("../../fonts/MuseoSansCyrl700.woff") format("woff");
+  font-weight: bold;
+}
+
 body {
   background-color: #25252d;
+  font-family: MuseoSansCyrl, sans-serif;
 }
 
 .container {
@@ -11,15 +46,28 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  background-image: -moz-linear-gradient( 0deg, rgb(252,195,114) 0%, rgb(240,219,188) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(252,195,114) 0%, rgb(240,219,188) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(252,195,114) 0%, rgb(240,219,188) 100%);
+  padding: 21px 71px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
 .header-main-wrapper {
-  background-image: url("images/main/header-background.png");
+  background-image: url("../../images/main/header-background.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  &::after {
+    content: '';
+    display: block;
+    height: 190px;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+  }
   .header {
     border-bottom: 1px solid #363d51;
     padding: 21px 0;
@@ -30,13 +78,95 @@ body {
       .header-call{
         display: flex;
         flex-direction: column;
+        max-width: 170px;
         .header-call-text {
-
+          margin-bottom: 13px;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          line-height: 0.833;
+        }
+        .header-call-action{
+          text-align: right;
+          position: relative;
+          #call-action {
+            font-size: 16px;
+            text-decoration: none;
+            color: rgb(236, 198, 107);
+            line-height: 0.938;
+            font-weight: bold;
+            position: relative;
+            &::before {
+              content: url('../../images/main/header-effect.png');
+              display: none;
+              position: absolute;
+              top: -18px;
+              left: -46px;
+            }
+            &::after {
+              display: block;
+              position: absolute;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: #ecc66b;
+              content: "";
+              transition: width 0.3s ease-out;
+            }
+            &:focus {
+              &::after {
+                width: 100%;
+              }
+            }
+            &:hover {
+              &::before {
+                display: block;
+              }
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .building-description {
+    margin-top: 162px;
+    text-align: center;
+    padding-bottom: 245px;
+    .container {
+      max-width: 634px;
+      padding: 0;
+      h1 {
+        font-size: 50px;
+        font-family: "Neumann", sans-serif;
+        color: rgb(236, 198, 107);
+        margin-bottom: 25px;
+      }
+      .building-description-text {
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .building-description-actions {
+        .btn {
+          height: 60px;
+          width: 300px;
+          text-decoration: none;
+          font-size: 18px;
+          color: rgb(37, 37, 45);
+          font-weight: bold;
         }
       }
     }
   }
 }
+
+
+
+
+
 
 
 @import "adaptive";
