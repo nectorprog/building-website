@@ -342,6 +342,155 @@ main {
       }
     }
   }
+  .buildings-technology {
+    margin-bottom: 224px;
+    .container {
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        font-family: "Neumann", sans-serif;
+        color: rgb(236, 198, 107);
+        margin-bottom: 83px;
+      }
+      .tech-wrapper {
+        position: relative;
+        img {
+          margin: 0 auto;
+        }
+        .tech-item {
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &.ti1 {
+            top: -408px;
+            left: 715px;
+            .tech-item-text {
+              max-width: 270px;
+              top: 7px;
+              left: 189px;
+            }
+          }
+          &.ti2 {
+            top: -263px;
+            left: 630px;
+            .tech-item-text {
+              max-width: 239px;
+              top: 52px;
+              left: 274px;
+            }
+          }
+          &.ti3 {
+            top: -68px;
+            left: 470px;
+            .tech-item-text {
+              max-width: 230px;
+              top: 41px;
+              left: 145px;
+            }
+          }
+          &.ti4 {
+            top: -230px;
+            left: 260px;
+            .tech-item-text {
+              max-width: 239px;
+              top: 43px;
+              left: -235px;
+            }
+          }
+          &.ti5 {
+            top: -437px;
+            left: 200px;
+            .tech-item-text {
+              max-width: 267px;
+              top: 20px;
+              left: -198px;
+            }
+          }
+          .tech-item-text {
+            position: absolute;
+            text-align: left;
+            .tech-item-title {
+              font-size: 18px;
+              color: rgb(255, 255, 255);
+              font-weight: 500;
+              margin-bottom: 16px;
+            }
+            .tech-item-description {
+              font-size: 16px;
+              color: rgb(255, 255, 255);
+              line-height: 1.313;
+              font-weight: 100;
+            }
+          }
+        }
+      }
+    }
+  }
+  .steps {
+    .container {
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Neumann", sans-serif;
+        color: rgb(236, 198, 107);
+        margin-bottom: 121px;
+      }
+      .steps-items {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 308px;
+        gap: 151px 0;
+        .step-item {
+          justify-self: center;
+          display: flex;
+          align-items: flex-start;
+          .step-item-image {
+            margin-right: 18px;
+          }
+          .step-item-text {
+            .item-text-title {
+              font-size: 18px;
+              font-weight: 500;
+              color: rgb(255, 255, 255);
+              margin-bottom: 10px;
+            }
+            .item-text-description {
+              font-size: 18px;
+              font-weight: 100;
+              color: rgb(255, 255, 255);
+              line-height: 1.278;
+              span {
+                font-weight: 700;
+                text-decoration: underline;
+              }
+            }
+            &:nth-child(1) {
+              max-width: 241px;
+            }
+            &:nth-child(2) {
+              max-width: 271px;
+            }
+            &:nth-child(3) {
+              max-width: 203px;
+            }
+            &:nth-child(4) {
+              max-width: 195px;
+            }
+            &:nth-child(5) {
+              max-width: 242px;
+            }
+            &:nth-child(6) {
+              max-width: 173px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @import "adaptive";
