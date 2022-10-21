@@ -17,11 +17,12 @@
   },
   "homepage": "https://github.com/nectorprog/building-website#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "jquery": "^3.6.1",
     "sass": "^1.55.0",
-    "slick-carousel": "^1.8.1"
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
