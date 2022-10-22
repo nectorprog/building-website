@@ -1,0 +1,117 @@
+@media screen and (max-width: 1249px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          position: relative;
+          .non-adaptive-house {
+            display: none;
+          }
+          .adaptive-house {
+            display: block;
+            margin: 0 auto;
+          }
+          .tech-choose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-width: 1px;
+            border-color: rgb(236, 198, 107);
+            border-style: solid;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            &:hover {
+              border-color: #fcedcb;
+              .tech-choose-circle {
+                background-color: #fcedcb;
+              }
+            }
+            .tech-choose-circle {
+              border-radius: 50%;
+              background-color: rgb(236, 198, 107);
+              box-shadow: 0px 0px 25.5px 4.5px rgba(0, 0, 0, 0.004);
+              width: 22px;
+              height: 22px;
+            }
+            &.tch1 {
+              left: 526px;
+              top: 135px;
+            }
+            &.tch2 {
+              left: 450px;
+              top: 320px;
+            }
+            &.tch3 {
+              left: 278px;
+              top: 466px;
+            }
+            &.tch4 {
+              left: 200px;
+              top: 308px;
+            }
+            &.tch5 {
+              left: 120px;
+              top: 129px;
+            }
+          }
+          .tech-choose-description {
+            padding: 20px 16px;
+            background-color: #313139;
+            position: relative;
+            &:before {
+              content: "";
+              border: solid transparent;
+              position: absolute;
+              bottom: 126%;
+              left: 50%;
+              border-bottom-color: #313139;
+              border-width: 9px;
+              margin-left: -9px;
+          }
+
+          .tech-item {
+            display: none;
+            padding: 20px 16px;
+            background-color: #313139;
+            width: 100%;
+            .triangle-wrapper {
+              position: relative;
+              width: 100%;
+
+              }
+
+              &.ti1 {
+                max-width: unset;
+              }
+
+              &.ti2 {
+                max-width: unset;
+              }
+
+              &.ti3 {
+                max-width: unset;
+              }
+
+              &.ti4 {
+                max-width: unset;
+              }
+
+              &.ti5 {
+                max-width: unset;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1231px) {
+
+  // адаптив слайдера на 1 слайд!
+
+}

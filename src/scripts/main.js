@@ -28,30 +28,9 @@ $(document).ready(function () {
         controlsPosition: 'bottom',
         navPosition: 'bottom',
         navAsThumbnails: true,
-        autoplay: false,
+        autoplay: true,
         autoplayButtonOutput: false,
         controlsContainer: "#custom-control"
-
-
-        // slideBy: "page",
-        // nav: false,
-        // speed: 500,
-        // responsive: {
-        //     320: {
-        //         items: 1,
-        //         gutter: 10,
-        //         touch: true,
-        //         mouseDrag: true,
-        //         controls: false
-        //     },
-        //     900: {
-        //         items: 3,
-        //         touch: true,
-        //         gutter: 20,
-        //         mouseDrag: true,
-        //         controls: true
-        //     }
-        // }
     });
 
     slider
@@ -59,13 +38,23 @@ $(document).ready(function () {
         .slideItems[slider.getInfo().index].classList.add(
         "vl-slide-center"
     );
+    slider
+        .getInfo()
+        .slideItems[slider.getInfo().index-1].classList.add(
+        "vl-slide-prev"
+    );
     slider.events.on("indexChanged", () => {
         const info = slider.getInfo();
         const indexCurr = info.index;
         const elements = document.getElementsByClassName("vl-slide-center");
+        const elements2 = document.getElementsByClassName("vl-slide-prev");
         while (elements.length > 0) {
             elements[0].classList.remove("vl-slide-center");
         }
+        while (elements2.length > 0) {
+            elements2[0].classList.remove("vl-slide-prev");
+        }
+        info.slideItems[indexCurr - 1].classList.add("vl-slide-prev");
         info.slideItems[indexCurr].classList.add("vl-slide-center");
     });
 
@@ -219,9 +208,12 @@ $(document).ready(function () {
     });
 
 
-
     $('#reg-btn').click( (ev) => {
         regPopup.css('display', 'flex');
+
+        $('#order-form2').show();
+        $('#reg-popup-title').show();
+        regSuccess.hide();
 
         $(document).mouseup(function (e){ // событие клика по веб-документу
             const div = $(".reg-popup-content"); // тут указываем ID элемента
