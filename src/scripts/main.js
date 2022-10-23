@@ -22,6 +22,11 @@ $(document).ready(function () {
     const tci4 = $('.tci4');
     const tci5 = $('.tci5');
 
+    const amp = $('.adaptive-more-pr');
+    amp.eq(0).hide();
+    amp.eq(1).hide();
+    amp.eq(2).hide();
+
     tc1.click( (ev) => {
         tci1.show();
         tc1.addClass('tc-active');
@@ -249,10 +254,15 @@ $(document).ready(function () {
         }
     });
 
+
     jqMoreProjects.click( (ev) => {
         jqPiItem.removeClass('pi-hidden');
         jqMoreProjects.addClass('close-mp');
         jqLessProjects.removeClass('close-mp');
+
+        amp.eq(0).show();
+        amp.eq(1).show();
+        amp.eq(2).show();
 
         return false;
     });
@@ -261,7 +271,9 @@ $(document).ready(function () {
         jqPiItem.addClass('pi-hidden');
         jqMoreProjects.removeClass('close-mp');
         jqLessProjects.addClass('close-mp');
-
+        amp.eq(0).hide();
+        amp.eq(1).hide();
+        amp.eq(2).hide();
         return false;
     });
 

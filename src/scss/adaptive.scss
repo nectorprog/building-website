@@ -154,11 +154,9 @@
     }
   }
 
-
 }
 
 @media screen and (max-width: 1229px) {
-
   main{
     .slider-section {
       .container {
@@ -187,29 +185,43 @@
         }
       }
     }
-  }
-}
+    .guarantee {
+      .container {
+        .guarantee-block {
+          flex-direction: column;
+          .gb-item {
+            margin-bottom: 20px;
+          }
 
-@media screen and (max-width: 1195px) {
-  .consultation {
-    .container {
-      flex-direction: column;
-      .consultation-image {
-        display: none;
-      }
-      .consultation-text {
-        h2 {
-          margin-top: 20px;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 1148px) {
+@media screen and (max-width: 1195px) {
   main {
+    .consultation {
+      .container {
+        flex-direction: column;
+        .consultation-image {
+          display: none;
+        }
+        .consultation-text {
+          h2 {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
     .building-projects {
       .container {
+        max-width: 588px;
+        padding-left: 0;
+        padding-right: 0;
+        #our-projects {
+          margin-bottom: 50px;
+        }
         .project-item-adaptive-title {
           text-align: left;
           font-family: "Museo Sans Cyrl", sans-serif;
@@ -220,29 +232,53 @@
           margin-bottom: 25px;
         }
         .project-item {
-          max-width: 588px;
-          margin: 0 auto;
-
           flex-direction: column;
-          align-items: center;
-
-
-          .project-text{
+          align-items: flex-start;
+          margin-bottom: 90px;
+          .project-text {
+            order: 0;
             &:nth-child(odd) {
               margin-top: 30px;
               max-width: 588px;
             }
+            &:nth-child(even) {
+              margin-top: 30px;
+              max-width: 588px;
+              padding-left: 0;
+              padding-right: 0;
+            }
             .project-text-title {
               display: none;
+            }
+            .project-text-actions {
+              .btn {
+                width: 588px;
+                margin-left: auto;
+                margin-right: auto;
+              }
             }
             .project-text-circles:nth-child(odd) {
               max-width: 588px;
             }
+          }
+          .project-photos {
+            order: -1;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1148px) {
+  main {
+    .building-projects {
+      .container {
+        .project-item {
+
+          .project-text{
             .project-text-actions {
-              .btn {
-                margin-left: auto;
-                margin-right: auto;
-              }
 
             }
           }
