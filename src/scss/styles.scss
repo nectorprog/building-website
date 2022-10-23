@@ -54,6 +54,9 @@ body {
   align-items: center;
   text-decoration: none;
   height: 60px;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 }
 
 .btn-gradient {
@@ -569,17 +572,17 @@ main {
         color: rgb(236, 198, 107);
         margin-bottom: 70px;
       }
-
+      .project-item-adaptive-title{
+        display: none;
+      }
       .project-item {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 120px;
-
         &.pi-hidden {
           display: none;
         }
-
         .project-photos {
           max-width: 588px;
           display: flex;
@@ -715,6 +718,11 @@ main {
       .tech-wrapper {
         max-width: 695px;
         margin: 0 auto;
+        .tech-choose-wrapper {
+          .tech-choose-item {
+            display: none;
+          }
+        }
         .adaptive-house {
           display: none;
         }
