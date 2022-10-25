@@ -23,9 +23,6 @@ $(document).ready(function () {
     const tci5 = $('.tci5');
 
     const amp = $('.adaptive-more-pr');
-    amp.eq(0).hide();
-    amp.eq(1).hide();
-    amp.eq(2).hide();
 
     tc1.click( (ev) => {
         tci1.show();
@@ -274,6 +271,7 @@ $(document).ready(function () {
         amp.eq(0).hide();
         amp.eq(1).hide();
         amp.eq(2).hide();
+
         return false;
     });
 

@@ -230,6 +230,9 @@
           font-weight: 500;
           color: rgb(255, 255, 255);
           margin-bottom: 25px;
+          &.adaptive-more-pr {
+            display: none;
+          }
         }
         .project-item {
           flex-direction: column;
@@ -315,6 +318,103 @@
   }
 }
 
+@media screen and (max-width: 1059px) {
+  main {
+    .guarantee {
+      .container {
+        .guarantee-block {
+          margin-bottom: 20px;
+        }
+        .guarantee-circles {
+          flex-direction: column;
+          .gc-item {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 895px) {
+  main {
+    .guarantee {
+      margin-bottom: 100px;
+      .container {
+        .guarantee-circles {
+          margin-bottom: 54px;
+          .gc-item {
+            &.gci3 {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .reg-map {
+      .container {
+        padding-bottom: 90px;
+      }
+    }
+  }
+  footer {
+    .container {
+      flex-direction: column;
+      padding-bottom: 85px;
+      .footer-logo-links {
+        margin-bottom: 50px;
+        order: 1;
+        .links {
+          margin-top: 45px;
+        }
+      }
+      .footer-address-time {
+        margin-bottom: 49px;
+        order: 2;
+        text-align: center;
+      }
+      .header-call {
+        order: 3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    .guarantee {
+      .container {
+        .guarantee-actions {
+          max-width: 407px;
+          margin-left: auto;
+          margin-right: auto;
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .reg-map {
+      .container {
+        .rm-text-wrapper {
+          .btn {
+            max-width: 306px;
+          }
+        }
+      }
+    }
+    .consultation {
+      .container {
+        .consultation-text {
+          .order-form-item {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 760px) {
   main {
     .steps {
@@ -329,4 +429,111 @@
   }
 }
 
+@media screen and (max-width: 588px) {
+  main {
+    .guarantee {
+      .container {
+        .guarantee-block {
+          max-width: 588px;
+          .gb-item {
+            width: 100%;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    .guarantee {
+      .container {
+        .guarantee-block {
+          .gb-item {
+            .gb-item-image {
+              margin-right: 20px;
+              max-width: 35px;
+            }
+            .gb-item-text {
+              .gb-item-text-title {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(255, 255, 255);
+              }
+              .gb-item-text-description {
+                font-size: 14px;
+                font-weight: 100;
+                color: rgb(255, 255, 255);
+                line-height: 1.357;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+
+    .reg-map {
+      .container {
+        .rm-text-wrapper {
+          h2 {
+            font-size: 30px;
+            font-family: "Neumann", sans-serif;
+            color: rgb(236, 198, 107);
+            line-height: 1.333;
+          }
+          .reg-map-description {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+          }
+          .btn {
+            width: unset;
+          }
+        }
+      }
+    }
+    .consultation {
+      .container {
+        .consultation-text {
+          .cons-text-order {
+            font-size: 30px;
+            font-family: "Neumann", sans-serif;
+            color: rgb(236, 198, 107);
+            line-height: 1.333;
+          }
+          .order-form-item {
+            margin-left: auto;
+            margin-right: auto;
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .guarantee {
+      .container {
+        .guarantee-actions {
+          max-width: 407px;
+          margin-left: auto;
+          margin-right: auto;
+          .btn {
+            width: 100%;
+            span {
+              font-size: 14px;
+              font-weight: 700;
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
