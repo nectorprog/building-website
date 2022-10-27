@@ -1,4 +1,15 @@
+@media screen and (max-width: 1450px) {
+  .header-main-wrapper {
+    .burger-helps {
+      width: 140px;
+    }
+  }
+
+
+}
+
 @media screen and (max-width: 1249px) {
+
   main {
     .buildings-technology {
       .container {
@@ -17,36 +28,36 @@
             left: 0;
             width: 290px;
             &.tcw1 {
-              left: 393px;
-              top: 180px;
+              left: calc(50% - 62px);
+              top: calc(50% - 80px);
               .tech-choose-item {
                 display: none;
               }
             }
             &.tcw2 {
-              left: 300px;
-              top: 303px;
+              left: calc(50% - 51px);
+              top: calc(50% - -37px);
               .tech-choose-item {
                 display: none;
               }
             }
             &.tcw3 {
-              left: 144px;
-              top: 511px;
+              left: calc(50% - 214px);
+              top: calc(50% - -250px);
               .tech-choose-item {
                 display: block;
               }
             }
             &.tcw4 {
-              left: 5px;
-              top: 342px;
+              left: calc(50% - 249px);
+              top: calc(50% - -85px);
               .tech-choose-item {
                 display: none;
               }
             }
             &.tcw5 {
-              left: 0;
-              top: 178px;
+              left: calc(50% - 228px);
+              top: calc(50% - 85px);
               .tech-choose-item {
                 display: none;
               }
@@ -71,12 +82,7 @@
                   background-color: #fcedcb;
                 }
               }
-              &:hover {
-                border-color: #fcedcb;
-                .tech-choose-circle {
-                  background-color: #fcedcb;
-                }
-              }
+
               .tech-choose-circle {
                 border-radius: 50%;
                 background-color: rgb(236, 198, 107);
@@ -165,16 +171,23 @@
             padding-top: 0;
             .slider-item {
               text-align: center;
+              .img-descr {
+                width: unset;
+                text-align: left;
+              }
               &.vl-slide-center {
                 padding-right: 0!important;
                 position: static;
+                top: 0;
+                left: 0;
                 img {
                   position: static;
-                  max-width: 900px;
+                  max-width: 100%;
                 }
                 .img-descr {
-                  top: 604px;
-                  width: 900px;
+                  position: static;
+                  max-width: 100%;
+                  //padding: 0 50px;
                 }
               }
               &.vl-slide-prev {
@@ -217,14 +230,13 @@
     .building-projects {
       .container {
         max-width: 588px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
         #our-projects {
           margin-bottom: 50px;
         }
         .project-item-adaptive-title {
           text-align: left;
-          font-family: "Museo Sans Cyrl", sans-serif;
           display: block;
           font-size: 30px;
           font-weight: 500;
@@ -238,24 +250,26 @@
           flex-direction: column;
           align-items: flex-start;
           margin-bottom: 90px;
+          //padding: 0 15px;
           .project-text {
             order: 0;
             &:nth-child(odd) {
-              margin-top: 30px;
               max-width: 588px;
+              margin-top: 30px;
+
             }
             &:nth-child(even) {
-              margin-top: 30px;
               max-width: 588px;
-              padding-left: 0;
-              padding-right: 0;
+              margin-top: 30px;
             }
             .project-text-title {
               display: none;
             }
             .project-text-actions {
+              max-width: 588px;
               .btn {
-                width: 588px;
+                width: 100%;
+
                 margin-left: auto;
                 margin-right: auto;
               }
@@ -266,6 +280,7 @@
           }
           .project-photos {
             order: -1;
+            max-width: 100%;
           }
         }
       }
@@ -274,22 +289,6 @@
 
 }
 
-@media screen and (max-width: 1148px) {
-  main {
-    .building-projects {
-      .container {
-        .project-item {
-
-          .project-text{
-            .project-text-actions {
-
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 1135px) {
   main {
@@ -380,7 +379,62 @@
   }
 }
 
+@media screen and (max-width: 790px) {
+  main {
+    .slider-section {
+      .container {
+        .slider-wrapper {
+          .slider {
+            .slider-item {
+              .img-descr {
+                .descr-left {
+                  .descr-left-title {
+                    font-size: 14px;
+                  }
+                  .descr-left-description {
+                    font-size: 14px;
+                  }
+                }
+                .descr-right {
+                  .descr-right-dimensions {
+                    font-size: 14px;
+                  }
+                  .descr-right-area {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 768px) {
+  .header-main-wrapper {
+    .header {
+      padding: 48px 0;
+      .container {
+        .header-call {
+          display: none;
+        }
+      }
+    }
+    .building-description {
+      margin-top: 146px;
+      .container {
+        .flip-wrapper-1 {
+          display: none;
+        }
+      }
+    }
+    .burger-helps {
+      width: 15px;
+    }
+  }
   main {
     .guarantee {
       .container {
@@ -421,13 +475,32 @@
       .container {
         .steps-items {
           grid-template-columns: 338px;
-          gap: 151px 0;
+          gap: 101px 0;
           justify-content: center;
         }
       }
     }
   }
 }
+
+@media screen and (max-width: 590px) {
+  main {
+    .building-projects {
+      .container {
+        .project-item {
+          .project-photos {
+            .project-photos-block {
+              .project-photos-block-item {
+                max-width: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 588px) {
   main {
@@ -475,9 +548,74 @@
   }
 }
 
+@media screen and (max-width: 516px) {
+  .header-main-wrapper {
+    .building-description {
+      .container {
+        .building-description-wrapper {
+          h1 {
+            font-size: 26px;
+            font-family: "Neumann", sans-serif;
+            color: rgb(236, 198, 107);
+            line-height: 1.231;
+          }
+          .building-description-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            line-height: 1.286;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  main {
+    .slider-section {
+      .container {
+        .slider-wrapper {
+          .slider {
+            .slider-item {
+              .img-descr {
+                padding: 14px;
+                .descr-right {
+                  span {
+                    display: none;
+                  }
+                  .descr-right-area {
+                    span {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 425px) {
   main {
-
+    .building-projects {
+      .container {
+        .project-item-adaptive-title {
+          font-size: 18px;
+        }
+        .project-item {
+          .project-text {
+            .project-text-description {
+              font-size: 14px;
+              line-height: 1.357;
+            }
+          }
+        }
+      }
+    }
     .reg-map {
       .container {
         .rm-text-wrapper {
@@ -529,6 +667,486 @@
               font-size: 14px;
               font-weight: 700;
               color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  main {
+    .building-projects {
+      .container {
+        .project-item {
+          .project-photos {
+            .project-photos-block {
+              .project-photos-block-item {
+                max-width: 84px;
+              }
+            }
+          }
+          .project-text {
+            .project-text-circles {
+              .circles-item {
+                width: 85px;
+                height: 85px;
+                span {
+                  font-size: 15px;
+                  line-height: 1.667;
+                }
+              }
+            }
+            .project-text-actions {
+              .btn {
+                span {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-main-wrapper {
+    .building-description {
+      .container {
+        .building-description-wrapper {
+          .btn {
+            width: 228px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 790px) {
+  main {
+    .steps {
+      .container {
+        h2 {
+          font-size: 30px;
+          line-height: 1.333;
+        }
+        .steps-items {
+          grid-template-columns: 1fr;
+          .step-item {
+            &:nth-child(1) {
+              .step-item-text {
+                max-width: 220px;
+              }
+            }
+            &:nth-child(2) {
+              .step-item-text {
+                max-width: 215px;
+              }
+            }
+            &:nth-child(5) {
+              .step-item-text {
+                max-width: 205px;
+              }
+            }
+            .step-item-text {
+              .item-text-title {
+                font-size: 16px;
+              }
+              .item-text-description {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slider-section {
+      .container {
+        .slider-wrapper {
+          .slider {
+            .slider-item {
+              .img-descr {
+                .descr-left {
+                  .descr-left-description {
+                    max-width: 95px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+// сдвиги для tech-choose
+
+@media screen and (max-width: 574px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw4 {
+              left: calc(50% - 235px);
+              top: calc(50% + 76px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw5 {
+              left: calc(50% - 211px);
+              top: calc(50% - 73px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 566px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 75px);
+              top: calc(50% - 79px);
+            }
+            &.tcw3 {
+              left: calc(50% - 207px);
+              top: calc(50% + 231px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 558px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw2 {
+              left: calc(50% - 74px);
+              top: calc(50% + 28px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 542px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 88px);
+              top: calc(50% - 70px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw4 {
+              left: calc(50% - 217px);
+              top: calc(50% + 76px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 526px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw3 {
+              left: calc(50% - 203px);
+              top: calc(50% + 217px);
+            }
+            &.tcw5 {
+              left: calc(50% - 194px);
+              top: calc(50% - 65px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 494px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 100px);
+              top: calc(50% - 62px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw3 {
+              left: calc(50% - 198px);
+              top: calc(50% + 201px);
+            }
+            &.tcw4 {
+              left: calc(50% - 207px);
+              top: calc(50% + 67px);
+            }
+            &.tcw5 {
+              left: calc(50% - 183px);
+              top: calc(50% - 52px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 458px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 116px);
+              top: calc(50% - 56px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 442px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw2 {
+              left: calc(50% - 64px);
+              top: calc(50% + 33px);
+              width: 245px;
+            }
+            &.tcw4 {
+              left: calc(50% - 188px);
+              top: calc(50% + 67px);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 434px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw3 {
+              left: calc(50% - 191px);
+              top: calc(50% + 180px);
+            }
+            &.tcw5 {
+              left: calc(50% - 169px);
+              top: calc(50% - 44px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 416px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 136px);
+              top: calc(50% - 45px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 406px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw4 {
+              left: calc(50% - 174px);
+              top: calc(50% + 66px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw3 {
+              left: calc(50% - 162px);
+              top: calc(50% + 167px);
+              width: 258px;
+            }
+            &.tcw5 {
+              left: calc(50% - 158px);
+              top: calc(50% - 34px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 377px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw2 {
+              left: calc(50% - 88px);
+            }
+            &.tcw4 {
+              left: calc(50% - 164px);
+              top: calc(50% + 61px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 354px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw1 {
+              left: calc(50% - 152px);
+              top: calc(50% - 29px);
+            }
+            &.tcw3 {
+              left: calc(50% - 165px);
+              top: calc(50% + 156px);
+            }
+            &.tcw5 {
+              left: calc(50% - 146px);
+              top: calc(50% - 29px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 342px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw3 {
+              left: calc(50% - 155px);
+              top: calc(50% + 156px);
+            }
+            &.tcw4 {
+              left: calc(50% - 153px);
+              top: calc(50% + 58px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 342px) {
+  main {
+    .buildings-technology {
+      .container {
+        .tech-wrapper {
+          .tech-choose-wrapper {
+            &.tcw5 {
+              left: calc(50% - 136px);
+              top: calc(50% - 29px);
             }
           }
         }

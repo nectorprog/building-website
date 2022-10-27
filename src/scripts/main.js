@@ -25,78 +25,110 @@ $(document).ready(function () {
     const amp = $('.adaptive-more-pr');
 
     tc1.click( (ev) => {
-        tci1.show();
-        tc1.addClass('tc-active');
+        if (tc1.hasClass("tc-active")) {
+            tci1.hide();
+            tc1.removeClass('tc-active');
+        }
+        else {
+            tci1.show();
 
-        tci2.hide();
-        tci3.hide();
-        tci4.hide();
-        tci5.hide();
+            tc1.addClass('tc-active');
 
-        tc2.removeClass('tc-active');
-        tc3.removeClass('tc-active');
-        tc4.removeClass('tc-active');
-        tc5.removeClass('tc-active');
+            tci2.hide();
+            tci3.hide();
+            tci4.hide();
+            tci5.hide();
+
+            tc2.removeClass('tc-active');
+            tc3.removeClass('tc-active');
+            tc4.removeClass('tc-active');
+            tc5.removeClass('tc-active');
+        }
+
         return false;
     });
     tc2.click( (ev) => {
-        tci2.show();
-        tc2.addClass('tc-active');
+        if (tc2.hasClass("tc-active")) {
+            tci2.hide();
+            tc2.removeClass('tc-active');
+        }  else {
+            tci2.show();
+            tc2.addClass('tc-active');
 
-        tci1.hide();
-        tci3.hide();
-        tci4.hide();
-        tci5.hide();
+            tci1.hide();
+            tci3.hide();
+            tci4.hide();
+            tci5.hide();
 
-        tc1.removeClass('tc-active');
-        tc3.removeClass('tc-active');
-        tc4.removeClass('tc-active');
-        tc5.removeClass('tc-active');
+            tc1.removeClass('tc-active');
+            tc3.removeClass('tc-active');
+            tc4.removeClass('tc-active');
+            tc5.removeClass('tc-active');
+        }
+
         return false;
     });
     tc3.click( (ev) => {
-        tci3.show();
-        tc3.addClass('tc-active');
+        if (tc3.hasClass("tc-active")) {
+            tci3.hide();
+            tc3.removeClass('tc-active');
+        } else {
+            tci3.show();
+            tc3.addClass('tc-active');
 
-        tci2.hide();
-        tci1.hide();
-        tci4.hide();
-        tci5.hide();
+            tci2.hide();
+            tci1.hide();
+            tci4.hide();
+            tci5.hide();
 
-        tc2.removeClass('tc-active');
-        tc1.removeClass('tc-active');
-        tc4.removeClass('tc-active');
-        tc5.removeClass('tc-active');
+            tc2.removeClass('tc-active');
+            tc1.removeClass('tc-active');
+            tc4.removeClass('tc-active');
+            tc5.removeClass('tc-active');
+        }
+
         return false;
     });
     tc4.click( (ev) => {
-        tci4.show();
-        tc4.addClass('tc-active');
+        if (tc4.hasClass("tc-active")) {
+            tci4.hide();
+            tc4.removeClass('tc-active');
+        } else {
+            tci4.show();
+            tc4.addClass('tc-active');
 
-        tci2.hide();
-        tci3.hide();
-        tci1.hide();
-        tci5.hide();
+            tci2.hide();
+            tci3.hide();
+            tci1.hide();
+            tci5.hide();
 
-        tc2.removeClass('tc-active');
-        tc3.removeClass('tc-active');
-        tc1.removeClass('tc-active');
-        tc5.removeClass('tc-active');
+            tc2.removeClass('tc-active');
+            tc3.removeClass('tc-active');
+            tc1.removeClass('tc-active');
+            tc5.removeClass('tc-active');
+        }
+
         return false;
     });
     tc5.click( (ev) => {
-        tci5.show();
-        tc5.addClass('tc-active');
+        if (tc5.hasClass("tc-active")) {
+            tci5.hide();
+            tc5.removeClass('tc-active');
+        } else {
+            tci5.show();
+            tc5.addClass('tc-active');
 
-        tci2.hide();
-        tci3.hide();
-        tci4.hide();
-        tci1.hide();
+            tci2.hide();
+            tci3.hide();
+            tci4.hide();
+            tci1.hide();
 
-        tc2.removeClass('tc-active');
-        tc3.removeClass('tc-active');
-        tc4.removeClass('tc-active');
-        tc1.removeClass('tc-active');
+            tc2.removeClass('tc-active');
+            tc3.removeClass('tc-active');
+            tc4.removeClass('tc-active');
+            tc1.removeClass('tc-active');
+        }
+
         return false;
     });
 
@@ -118,8 +150,6 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 200);
     });
 
-
-
     const slider = tns({
         container: ".slider",
         mode: "carousel",
@@ -135,23 +165,26 @@ $(document).ready(function () {
         responsive: {
             320: {
                 items: 1,
-                edgePadding: 20,
-                gutter: 70,
                 center: true,
                 fixedWidth: false,
+                gutter: 0,
+                edgePadding: 0,
+                controls: false
             },
-            1000: {
+            680: {
                 items: 1,
                 center: true,
-                fixedWidth: 900,
-                gutter: 45,
-                edgePadding: 115,
+                fixedWidth: false,
+                gutter: 0,
+                edgePadding: 110,
+                controls: true
             },
             1230: {
                 items: 3,
                 gutter: 30,
                 edgePadding: 79,
                 fixedWidth: 328,
+                controls: true
             }
         }
     });

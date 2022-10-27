@@ -719,8 +719,29 @@ main {
         max-width: 695px;
         margin: 0 auto;
         .tech-choose-wrapper {
+          .tech-choose {
+            &.tc1 {
+              left: calc(50% + 80px);
+            }
+            &.tc4 {
+              left: calc(50% - 119px);
+            }
+            &.tc5 {
+              left: calc(50% - 119px);
+            }
+
+          }
           .tech-choose-item {
             display: none;
+            &.tci1::before {
+              margin-left: 80px;
+            }
+            &.tci4::before {
+              margin-left: -119px;
+            }
+            &.tci5::before {
+              margin-left: -119px;
+            }
           }
         }
         .adaptive-house {
@@ -896,7 +917,7 @@ main {
             position: absolute;
             z-index: 99;
             top: calc(50% - 50px);
-            left: 0px;
+            left: 0;
             cursor: pointer;
             svg {
               fill: #ecc66b;
@@ -955,7 +976,7 @@ main {
         .slider {
           position: relative;
           padding-top: 63px;
-          padding-bottom: 100px;
+          padding-bottom: 119px;
           .slider-item {
 
             .img-descr {
@@ -967,6 +988,14 @@ main {
               background-color: #313139;
               position: absolute;
               top: 302px;
+              .line-up {
+                content: "";
+                width: 1px;
+                height: 56px;
+                border-left: 1px solid white;
+                margin-right: 20px;
+                margin-left: 20px;
+              }
               .descr-left {
                 .descr-left-title {
                   font-size: 18px;
