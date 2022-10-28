@@ -290,9 +290,9 @@ $(document).ready(function () {
         jqMoreProjects.addClass('close-mp');
         jqLessProjects.removeClass('close-mp');
 
-        amp.eq(0).show();
-        amp.eq(1).show();
-        amp.eq(2).show();
+        amp.eq(0).addClass('at-active');
+        amp.eq(1).addClass('at-active');
+        amp.eq(2).addClass('at-active');
 
         return false;
     });
@@ -301,9 +301,10 @@ $(document).ready(function () {
         jqPiItem.addClass('pi-hidden');
         jqMoreProjects.removeClass('close-mp');
         jqLessProjects.addClass('close-mp');
-        amp.eq(0).hide();
-        amp.eq(1).hide();
-        amp.eq(2).hide();
+
+        amp.eq(0).removeClass('at-active');
+        amp.eq(1).removeClass('at-active');
+        amp.eq(2).removeClass('at-active');
 
         return false;
     });

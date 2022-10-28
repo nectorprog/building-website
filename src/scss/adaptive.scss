@@ -1,11 +1,17 @@
+@media screen and (max-width: 1580px) {
+  .header-main-wrapper {
+    .burger-helps {
+      width: 194px;
+    }
+  }
+}
+
 @media screen and (max-width: 1450px) {
   .header-main-wrapper {
     .burger-helps {
       width: 140px;
     }
   }
-
-
 }
 
 @media screen and (max-width: 1249px) {
@@ -244,6 +250,9 @@
           margin-bottom: 25px;
           &.adaptive-more-pr {
             display: none;
+          }
+          &.at-active {
+            display: block;
           }
         }
         .project-item {
