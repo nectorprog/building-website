@@ -136,19 +136,6 @@ $(document).ready(function () {
     burgerMenuWrapper.hide();
     burgerHelps.hide();
 
-    $("#header-menu").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-
-
-        const id  = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-
-
-        $('body,html').animate({scrollTop: top}, 200);
-    });
 
     const slider = tns({
         container: ".slider",
