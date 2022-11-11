@@ -997,6 +997,9 @@ main {
               fill: #ecbe54;
             }
           }
+          &::after {
+            content: unset;
+          }
         }
         .swiper-button-next {
           width: 50px;
@@ -1008,6 +1011,9 @@ main {
             &:hover {
               fill: #ecbe54;
             }
+          }
+          &::after {
+            content: unset;
           }
         }
       }
