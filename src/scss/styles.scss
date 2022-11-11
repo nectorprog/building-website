@@ -339,7 +339,7 @@ body {
   position: relative;
   background-image: url("../../images/main/header-background.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
   background-position: top;
   margin-bottom: 144px;
@@ -909,85 +909,21 @@ main {
         margin-bottom: 80px;
         text-align: center;
       }
-      .slider-wrapper {
-        position: relative;
-        .control {
-          list-style: none;
-          .prev {
-            position: absolute;
-            z-index: 99;
-            top: calc(50% - 50px);
-            left: 0;
-            cursor: pointer;
-            svg {
-              fill: #ecc66b;
-              width: 50px;
-              transform: rotate(-90deg);
-              &:hover {
-                fill: #ecbe54;
-              }
-            }
-          }
-          .next {
-            position: absolute;
-            z-index: 99;
-            top: calc(50% - 50px);
-            right: 0px;
-            cursor: pointer;
-            padding-left: 15px;
-            svg {
-              fill: #ecc66b;
-              width: 50px;
-              transform: rotate(90deg);
-              &:hover {
-                fill: #ecbe54;
-              }
-            }
-          }
-        }
-        .tns-outer {
-          .tns-nav {
-            text-align: center;
-            margin-top: 40px;
-            button {
-              font-size: 0;
-              box-sizing: border-box;
-              width: 10px;
-              height: 10px;
-              padding: 0;
-              border-width: 1px;
-              border-color: rgb(236, 198, 107);
-              border-style: solid;
-              background-color: transparent;
-              border-radius: 50%;
-              margin-right: 8px;
-              margin-left: 8px;
-              &.tns-nav-active {
-                background-color: rgb(236, 198, 107);
-              }
-            }
-          }
-          .tns-ovh {
-            .tns-inner {
-              overflow: hidden;
-            }
-          }
-        }
-        .slider {
-          position: relative;
-          padding-top: 63px;
-          padding-bottom: 119px;
-          .slider-item {
-
+      .swiper {
+        padding-bottom: 40px;
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
             .img-descr {
-              display: none;
+              display: flex;
               align-items: center;
               justify-content: space-between;
               padding: 15px 20px;
-              width: 450px;
+              width: 100%;
               background-color: #313139;
-              position: absolute;
-              top: 302px;
               .line-up {
                 content: "";
                 width: 1px;
@@ -1029,28 +965,50 @@ main {
                 }
               }
             }
-
-            &.vl-slide-prev {
-              margin-right: -16px;
-            }
-
-            &.vl-slide-center {
-              padding-right: 0!important;
-              top: -73px;
-              position: relative;
-              left: -51px;
-              img {
-                position: absolute;
-                max-width: 450px;
-                z-index: 2;
-              }
-              .img-descr {
-                display: flex;
-              }
-
+          }
+        }
+        .swiper-pagination {
+          .swiper-pagination-bullet {
+            font-size: 0;
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border-width: 1px;
+            border-color: rgb(236, 198, 107);
+            border-style: solid;
+            background-color: transparent;
+            border-radius: 50%;
+            margin-right: 8px;
+            margin-left: 8px;
+            &.swiper-pagination-bullet-active {
+              background-color: rgb(236, 198, 107);
             }
           }
-
+        }
+        .swiper-button-prev {
+          width: 50px;
+          cursor: pointer;
+          svg {
+            fill: #ecc66b;
+            width: 50px;
+            transform: rotate(-90deg);
+            &:hover {
+              fill: #ecbe54;
+            }
+          }
+        }
+        .swiper-button-next {
+          width: 50px;
+          cursor: pointer;
+          svg {
+            fill: #ecc66b;
+            width: 50px;
+            transform: rotate(90deg);
+            &:hover {
+              fill: #ecbe54;
+            }
+          }
         }
       }
     }

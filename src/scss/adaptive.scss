@@ -345,6 +345,23 @@
   }
 }
 
+@media screen and (max-width: 999px) {
+  main {
+    .slider-section {
+      .container {
+        .swiper {
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 895px) {
   main {
     .guarantee {
@@ -391,6 +408,44 @@
 
 @media screen and (max-width: 790px) {
   main {
+    .steps {
+      .container {
+        h2 {
+          font-size: 30px;
+          line-height: 1.333;
+        }
+        .steps-items {
+          grid-template-columns: 288px;
+          gap: 101px 0;
+          justify-content: center;
+          .step-item {
+            &:nth-child(1) {
+              .step-item-text {
+                max-width: 220px;
+              }
+            }
+            &:nth-child(2) {
+              .step-item-text {
+                max-width: 215px;
+              }
+            }
+            &:nth-child(5) {
+              .step-item-text {
+                max-width: 205px;
+              }
+            }
+            .step-item-text {
+              .item-text-title {
+                font-size: 16px;
+              }
+              .item-text-description {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
     .slider-section {
       .container {
         .slider-wrapper {
@@ -473,20 +528,6 @@
           .order-form-item {
             width: 100%;
           }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 760px) {
-  main {
-    .steps {
-      .container {
-        .steps-items {
-          grid-template-columns: 338px;
-          gap: 101px 0;
-          justify-content: center;
         }
       }
     }
@@ -581,23 +622,29 @@
   }
 }
 
-@media screen and (max-width: 790px) {
+
+@media screen and (max-width: 489px) {
   main {
     .slider-section {
       .container {
-        .slider-wrapper {
-          .slider {
-            .slider-item {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
               .img-descr {
-                padding: 14px;
+                .descr-left {
+                  .descr-left-title {
+                    font-size: 14px;
+                  }
+                  .descr-left-description {
+                    font-size: 14px;
+                  }
+                }
                 .descr-right {
-                  span {
-                    display: none;
+                  .descr-right-dimensions {
+                    font-size: 14px;
                   }
                   .descr-right-area {
-                    span {
-                      display: none;
-                    }
+                    font-size: 14px;
                   }
                 }
               }
@@ -608,6 +655,8 @@
     }
   }
 }
+
+
 
 @media screen and (max-width: 425px) {
   main {
@@ -734,53 +783,28 @@
       }
     }
   }
-  @media screen and (max-width: 790px) {
   main {
-    .steps {
-      .container {
-        h2 {
-          font-size: 30px;
-          line-height: 1.333;
-        }
-        .steps-items {
-          grid-template-columns: 1fr;
-          .step-item {
-            &:nth-child(1) {
-              .step-item-text {
-                max-width: 220px;
-              }
-            }
-            &:nth-child(2) {
-              .step-item-text {
-                max-width: 215px;
-              }
-            }
-            &:nth-child(5) {
-              .step-item-text {
-                max-width: 205px;
-              }
-            }
-            .step-item-text {
-              .item-text-title {
-                font-size: 16px;
-              }
-              .item-text-description {
-                font-size: 16px;
-              }
-            }
-          }
-        }
-      }
-    }
     .slider-section {
       .container {
         .slider-wrapper {
           .slider {
             .slider-item {
               .img-descr {
+                padding: 15px 8px;
                 .descr-left {
+                  .descr-left-title {
+                    font-size: 14px;
+                  }
                   .descr-left-description {
-                    max-width: 95px;
+                    font-size: 14px;
+                  }
+                }
+                .descr-right {
+                  .descr-right-dimensions {
+                    font-size: 14px;
+                  }
+                  .descr-right-area {
+                    font-size: 14px;
                   }
                 }
               }
@@ -789,7 +813,6 @@
         }
       }
     }
-  }
   }
 }
 

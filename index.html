@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/images/favicon/home.png" type="image/png">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <link rel="stylesheet" href="node_modules/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -689,39 +689,9 @@
     <section class="slider-section">
         <div class="container">
             <h2>Построили более 200 домов за 10 лет</h2>
-            <div class="slider-wrapper">
-                <ul class="control" id="custom-control">
-                    <li class="prev">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <g id="Up-arrow">
-                            <path d="M46.7070007,34.2929993c0.3906975,0.3906021,0.3906975,1.0233994,0,1.4140015
-                                c-0.3906021,0.3906975-1.0233955,0.3906975-1.4140015,0L32,22.4141006L18.7070007,35.7070007
-                                c-0.3906002,0.3906975-1.0233955,0.3906975-1.4139996,0C17.0977001,35.5116997,17,35.2559013,17,35
-                                c0-0.2557983,0.0977001-0.5116997,0.2930012-0.7070007l13.9999981-14c0.3906059-0.3906002,1.0233994-0.3906002,1.4140015,0
-                                L46.7070007,34.2929993z"/>
-                            <path d="M32,0c-17.6730995,0-32,14.3268995-32,32s14.3268995,32,32,32c17.6731987,0,32-14.3269005,32-32S49.6731987,0,32,0z M32,2
-                                c16.542099,0,30,13.4580002,30,30c0,16.542099-13.457901,30-30,30s-30-13.457901-30-30C2.0000007,15.4580002,15.4579,2,32,2z"/>
-                        </g>
-                    </svg>
-                    </li>
-                    <li class="next">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <g id="Up-arrow">
-                            <path d="M46.7070007,34.2929993c0.3906975,0.3906021,0.3906975,1.0233994,0,1.4140015
-                                c-0.3906021,0.3906975-1.0233955,0.3906975-1.4140015,0L32,22.4141006L18.7070007,35.7070007
-                                c-0.3906002,0.3906975-1.0233955,0.3906975-1.4139996,0C17.0977001,35.5116997,17,35.2559013,17,35
-                                c0-0.2557983,0.0977001-0.5116997,0.2930012-0.7070007l13.9999981-14c0.3906059-0.3906002,1.0233994-0.3906002,1.4140015,0
-                                L46.7070007,34.2929993z"/>
-                            <path d="M32,0c-17.6730995,0-32,14.3268995-32,32s14.3268995,32,32,32c17.6731987,0,32-14.3269005,32-32S49.6731987,0,32,0z M32,2
-                                c16.542099,0,30,13.4580002,30,30c0,16.542099-13.457901,30-30,30s-30-13.457901-30-30C2.0000007,15.4580002,15.4579,2,32,2z"/>
-                        </g>
-                    </svg>
-                    </li>
-                </ul>
-                <div class="slider">
-                    <div class="slider-item">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img src="images/main/house001.png" alt="Дом 4" class="slider-img ">
                         <div class="img-descr">
                             <div class="descr-left">
@@ -745,8 +715,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
-                        <img src="images/main/house002.png" alt="Дом 5" class="slider-img">
+                    <div class="swiper-slide">
+                        <img src="images/main/house002.png" alt="Дом 4" class="slider-img ">
                         <div class="img-descr">
                             <div class="descr-left">
                                 <div class="descr-left-title">
@@ -756,7 +726,9 @@
                                     Киевская обл., г. Борова, 15
                                 </div>
                             </div>
+                            <div class="line-up">
 
+                            </div>
                             <div class="descr-right">
                                 <div class="descr-right-dimensions">
                                     <span>Габариты:</span> 8,4 м Х 10,5 м
@@ -767,8 +739,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
-                        <img src="images/main/house003.png" alt="Дом 6" class="slider-img">
+                    <div class="swiper-slide">
+                        <img src="images/main/house003.png" alt="Дом 4" class="slider-img ">
                         <div class="img-descr">
                             <div class="descr-left">
                                 <div class="descr-left-title">
@@ -778,7 +750,9 @@
                                     Киевская обл., г. Борова, 15
                                 </div>
                             </div>
+                            <div class="line-up">
 
+                            </div>
                             <div class="descr-right">
                                 <div class="descr-right-dimensions">
                                     <span>Габариты:</span> 8,4 м Х 10,5 м
@@ -789,8 +763,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
-                        <img src="images/main/house004.png" alt="Дом 4" class="slider-img">
+                    <div class="swiper-slide">
+                        <img src="images/main/house004.png" alt="Дом 4" class="slider-img ">
                         <div class="img-descr">
                             <div class="descr-left">
                                 <div class="descr-left-title">
@@ -800,7 +774,9 @@
                                     Киевская обл., г. Борова, 15
                                 </div>
                             </div>
+                            <div class="line-up">
 
+                            </div>
                             <div class="descr-right">
                                 <div class="descr-right-dimensions">
                                     <span>Габариты:</span> 8,4 м Х 10,5 м
@@ -811,8 +787,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-item">
-                        <img src="images/main/house005.png" alt="Дом 5" class="slider-img">
+                    <div class="swiper-slide">
+                        <img src="images/main/house005.png" alt="Дом 4" class="slider-img ">
                         <div class="img-descr">
                             <div class="descr-left">
                                 <div class="descr-left-title">
@@ -822,7 +798,9 @@
                                     Киевская обл., г. Борова, 15
                                 </div>
                             </div>
+                            <div class="line-up">
 
+                            </div>
                             <div class="descr-right">
                                 <div class="descr-right-dimensions">
                                     <span>Габариты:</span> 8,4 м Х 10,5 м
@@ -833,17 +811,156 @@
                             </div>
                         </div>
                     </div>
-<!--                    <div>-->
-<!--                        <img src="images/main/house006.png" alt="Дом 6" class="slider-img">-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <img src="images/main/house007.png" alt="Дом 6" class="slider-img">-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <img src="images/main/house008.png" alt="Дом 6" class="slider-img">-->
-<!--                    </div>-->
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                        <g id="Up-arrow">
+                            <path d="M46.7070007,34.2929993c0.3906975,0.3906021,0.3906975,1.0233994,0,1.4140015
+                                c-0.3906021,0.3906975-1.0233955,0.3906975-1.4140015,0L32,22.4141006L18.7070007,35.7070007
+                                c-0.3906002,0.3906975-1.0233955,0.3906975-1.4139996,0C17.0977001,35.5116997,17,35.2559013,17,35
+                                c0-0.2557983,0.0977001-0.5116997,0.2930012-0.7070007l13.9999981-14c0.3906059-0.3906002,1.0233994-0.3906002,1.4140015,0
+                                L46.7070007,34.2929993z"/>
+                            <path d="M32,0c-17.6730995,0-32,14.3268995-32,32s14.3268995,32,32,32c17.6731987,0,32-14.3269005,32-32S49.6731987,0,32,0z M32,2
+                                c16.542099,0,30,13.4580002,30,30c0,16.542099-13.457901,30-30,30s-30-13.457901-30-30C2.0000007,15.4580002,15.4579,2,32,2z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g id="Up-arrow">
+                                <path d="M46.7070007,34.2929993c0.3906975,0.3906021,0.3906975,1.0233994,0,1.4140015
+                                    c-0.3906021,0.3906975-1.0233955,0.3906975-1.4140015,0L32,22.4141006L18.7070007,35.7070007
+                                    c-0.3906002,0.3906975-1.0233955,0.3906975-1.4139996,0C17.0977001,35.5116997,17,35.2559013,17,35
+                                    c0-0.2557983,0.0977001-0.5116997,0.2930012-0.7070007l13.9999981-14c0.3906059-0.3906002,1.0233994-0.3906002,1.4140015,0
+                                    L46.7070007,34.2929993z"/>
+                                <path d="M32,0c-17.6730995,0-32,14.3268995-32,32s14.3268995,32,32,32c17.6731987,0,32-14.3269005,32-32S49.6731987,0,32,0z M32,2
+                                    c16.542099,0,30,13.4580002,30,30c0,16.542099-13.457901,30-30,30s-30-13.457901-30-30C2.0000007,15.4580002,15.4579,2,32,2z"/>
+                            </g>
+                        </svg>
+                </div>
+
             </div>
+
+<!--                <div class="slider">-->
+<!--                    <div class="slider-item">-->
+<!--                        <img src="images/main/house001.png" alt="Дом 4" class="slider-img ">-->
+<!--                        <div class="img-descr">-->
+<!--                            <div class="descr-left">-->
+<!--                                <div class="descr-left-title">-->
+<!--                                    Modern house 005-->
+<!--                                </div>-->
+<!--                                <div class="descr-left-description">-->
+<!--                                    Киевская обл., г. Борова, 15-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="line-up">-->
+
+<!--                            </div>-->
+<!--                            <div class="descr-right">-->
+<!--                                <div class="descr-right-dimensions">-->
+<!--                                    <span>Габариты:</span> 8,4 м Х 10,5 м-->
+<!--                                </div>-->
+<!--                                <div class="descr-right-area">-->
+<!--                                    <span>Площадь:</span> 154 м2-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-item">-->
+<!--                        <img src="images/main/house002.png" alt="Дом 5" class="slider-img">-->
+<!--                        <div class="img-descr">-->
+<!--                            <div class="descr-left">-->
+<!--                                <div class="descr-left-title">-->
+<!--                                    Modern house 005-->
+<!--                                </div>-->
+<!--                                <div class="descr-left-description">-->
+<!--                                    Киевская обл., г. Борова, 15-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="descr-right">-->
+<!--                                <div class="descr-right-dimensions">-->
+<!--                                    <span>Габариты:</span> 8,4 м Х 10,5 м-->
+<!--                                </div>-->
+<!--                                <div class="descr-right-area">-->
+<!--                                    <span>Площадь:</span> 154 м2-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-item">-->
+<!--                        <img src="images/main/house003.png" alt="Дом 6" class="slider-img">-->
+<!--                        <div class="img-descr">-->
+<!--                            <div class="descr-left">-->
+<!--                                <div class="descr-left-title">-->
+<!--                                    Modern house 005-->
+<!--                                </div>-->
+<!--                                <div class="descr-left-description">-->
+<!--                                    Киевская обл., г. Борова, 15-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="descr-right">-->
+<!--                                <div class="descr-right-dimensions">-->
+<!--                                    <span>Габариты:</span> 8,4 м Х 10,5 м-->
+<!--                                </div>-->
+<!--                                <div class="descr-right-area">-->
+<!--                                    <span>Площадь:</span> 154 м2-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-item">-->
+<!--                        <img src="images/main/house004.png" alt="Дом 4" class="slider-img">-->
+<!--                        <div class="img-descr">-->
+<!--                            <div class="descr-left">-->
+<!--                                <div class="descr-left-title">-->
+<!--                                    Modern house 005-->
+<!--                                </div>-->
+<!--                                <div class="descr-left-description">-->
+<!--                                    Киевская обл., г. Борова, 15-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="descr-right">-->
+<!--                                <div class="descr-right-dimensions">-->
+<!--                                    <span>Габариты:</span> 8,4 м Х 10,5 м-->
+<!--                                </div>-->
+<!--                                <div class="descr-right-area">-->
+<!--                                    <span>Площадь:</span> 154 м2-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-item">-->
+<!--                        <img src="images/main/house005.png" alt="Дом 5" class="slider-img">-->
+<!--                        <div class="img-descr">-->
+<!--                            <div class="descr-left">-->
+<!--                                <div class="descr-left-title">-->
+<!--                                    Modern house 005-->
+<!--                                </div>-->
+<!--                                <div class="descr-left-description">-->
+<!--                                    Киевская обл., г. Борова, 15-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="descr-right">-->
+<!--                                <div class="descr-right-dimensions">-->
+<!--                                    <span>Габариты:</span> 8,4 м Х 10,5 м-->
+<!--                                </div>-->
+<!--                                <div class="descr-right-area">-->
+<!--                                    <span>Площадь:</span> 154 м2-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
         </div>
     </section>
@@ -1085,7 +1202,7 @@
 <script src="src/scripts/jquery-ui.min.js"></script>
 <script src="src/scripts/jquery.magnific-popup.min.js"></script>
 <script src="src/scripts/wow.min.js"></script>
-<script src="node_modules/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
 <script src="src/scripts/main.js"></script>
 
 </body>

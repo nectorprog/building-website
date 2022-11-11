@@ -137,70 +137,50 @@ $(document).ready(function () {
     burgerHelps.hide();
 
 
-    const slider = tns({
-        container: ".slider",
-        mode: "carousel",
-        edgePadding: 79,
-        slideBy: 1,
-        center: true,
-        controlsPosition: 'bottom',
-        navPosition: 'bottom',
-        navAsThumbnails: true,
-        autoplay: false,
-        autoplayButtonOutput: false,
-        controlsContainer: "#custom-control",
-        responsive: {
+    var swiper = new Swiper(".mySwiper", {
+        grabCursor: true,
+        effect: "creative",
+        slidesPerView: 3,
+        centeredSlides: true,
+        initialSlide: 1,
+        loop: true,
+        creativeEffect: {
+            prev: {
+                translate: ['-40%', 0, 0],
+                scale: 0.7
+            },
+            next: {
+                translate: ["40%", 0, 0],
+                scale: 0.7
+            }
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+
+
+        breakpoints: {
+            // when window width is >= 320px
             320: {
-                items: 1,
-                center: true,
-                fixedWidth: false,
-                gutter: 0,
-                edgePadding: 0,
-                controls: false
+                slidesPerView: 1,
+                autoHeight: true,
+                navigation: false
             },
-            680: {
-                items: 1,
-                center: true,
-                fixedWidth: false,
-                gutter: 0,
-                edgePadding: 110,
-                controls: true
-            },
-            1230: {
-                items: 3,
-                gutter: 30,
-                edgePadding: 79,
-                fixedWidth: 328,
-                controls: true
+
+            1000: {
+                autoHeight: true,
+                slidesPerView: 3,
+                height: 420,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             }
         }
-    });
 
-    slider
-        .getInfo()
-        .slideItems[slider.getInfo().index].classList.add(
-        "vl-slide-center"
-    );
-    slider
-        .getInfo()
-        .slideItems[slider.getInfo().index-1].classList.add(
-        "vl-slide-prev"
-    );
-    slider.events.on("indexChanged", () => {
-        const info = slider.getInfo();
-        const indexCurr = info.index;
-        const elements = document.getElementsByClassName("vl-slide-center");
-        const elements2 = document.getElementsByClassName("vl-slide-prev");
-        while (elements.length > 0) {
-            elements[0].classList.remove("vl-slide-center");
-        }
-        while (elements2.length > 0) {
-            elements2[0].classList.remove("vl-slide-prev");
-        }
-        info.slideItems[indexCurr - 1].classList.add("vl-slide-prev");
-        info.slideItems[indexCurr].classList.add("vl-slide-center");
     });
-
 
     $('.open-popup-link').magnificPopup({
         type:'image',
