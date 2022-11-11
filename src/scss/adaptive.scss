@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 1450px) {
   .header-main-wrapper {
+    background-size: auto;
     .burger-helps {
       width: 140px;
     }
@@ -15,7 +16,6 @@
 }
 
 @media screen and (max-width: 1249px) {
-
   main {
     .buildings-technology {
       .container {
@@ -772,6 +772,7 @@
 }
 
 @media screen and (max-width: 375px) {
+
   .header-main-wrapper {
     .building-description {
       .container {
@@ -810,6 +811,13 @@
               }
             }
           }
+        }
+      }
+    }
+    .buildings-technology {
+      .container {
+        h2 {
+          font-size: 36px;
         }
       }
     }
