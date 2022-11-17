@@ -998,6 +998,7 @@ main {
             }
           }
           &::after {
+            display: none;
             content: unset;
           }
         }
@@ -1013,6 +1014,7 @@ main {
             }
           }
           &::after {
+            display: none;
             content: unset;
           }
         }
